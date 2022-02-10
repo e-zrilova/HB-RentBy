@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import 'macro-css';
 import "./pages/index.scss";
-import App from "./pages/index";
+import { Catalog } from "./pages/index";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Catalog />
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,9 +1,10 @@
-function App() {
+import "./index.scss";
+import { Base } from "../templates/Base";
+
+export function Catalog() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div className="wrapper clear">
+      <Base>Уникальный контент страницы</Base>
     </div>
   );
 }
-
-export default App;
