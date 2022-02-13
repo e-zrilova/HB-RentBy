@@ -1,10 +1,10 @@
-import "./index.scss";
-import { Base } from "../templates/Base";
+import styles from "./index.scss";
+import { Default } from "../components/layouts/Default";
 
-export function Catalog() {
+export function Newslist() {
   return (
-    <div className="wrapper clear">
-      <Base>Уникальный контент страницы</Base>
+    <div>
+      <Default className={styles.flex}>Уникальный контент страницы</Default>
     </div>
   );
 }

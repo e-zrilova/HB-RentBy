@@ -1,0 +1,18 @@
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.link {
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+}

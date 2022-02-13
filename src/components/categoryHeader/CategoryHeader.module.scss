@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.list {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 80px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.item {
+  padding-bottom: 15px;
+  transition: 0.1s;
+  border-bottom: 3px solid transparent;
+
+  &:not(:last-child) {
+    margin-right: 80px;
+  }
+
+  &:active {
+    border-bottom: 3px solid $secondBrend;
+  }
+}
+
+.link {
+  color: $black;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &:hover {
+    color: $secondBrend;
+  }
+
+
+}

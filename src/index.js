@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import 'macro-css';
 import "./pages/index.scss";
-import { Catalog } from "./pages/index";
+import clsx from 'clsx';
+import { Newslist } from "./pages/index";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Catalog />
+    <Newslist />
   </React.StrictMode>,
   document.getElementById("root")
 );

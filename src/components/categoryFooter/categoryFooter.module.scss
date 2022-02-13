@@ -1,0 +1,44 @@
+@import './../../styles/variables.scss';
+
+.list {
+  max-width: 560px;
+  column-count: 2;
+  margin: 0;
+  margin-right: 98px;
+}
+
+.item {
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  width: 250px;
+}
+
+.link {
+  color: $black;
+  font-family: $fontPrimary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.levelList {
+  column-count: 2;
+  margin: 0;
+  column-gap: 130px;
+  margin-top: 10px;
+}
+
+.levelItem {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+.levelLink {
+  color: $color-2;
+  font-family: $fontPrimary;
+  font-size: 14px;
+  line-height: 17px;
+}

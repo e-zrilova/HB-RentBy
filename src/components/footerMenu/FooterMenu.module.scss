@@ -1,0 +1,15 @@
+@import './../../styles/variables.scss';
+
+.list {
+  margin: 0;
+}
+
+.item {
+  margin-top: 8px;
+}
+
+.link {
+  color: $color-2;
+  font-size: 14px;
+  line-height: 17px;
+}
