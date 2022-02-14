@@ -3,6 +3,7 @@ import { FooterMenu } from "../footerMenu/index";
 import { Category } from "../categoryFooter/index";
 import { Social } from "../social/Social";
 import { Companies } from "../companies/Companies";
+import cx from "classnames";
 const info = {
   contacts:
     "ИП Шушкевич Андрей Викторович \n УНП 192602485 Минским горисполкомом 10.02.2016 220068 \n РБ, г. Минск, ул. Осипенко, 21, кв.23",
@@ -33,8 +34,9 @@ export function Footer() {
                 {info.email}
               </a>
             </div>
-
-            <p className={styles.workTime}>{info.worktime}</p>
+            <p className={cx(styles.workTime)}>
+              {info.worktime}
+            </p>
           </div>
           <div>
             <div className={styles.wrapper}>
