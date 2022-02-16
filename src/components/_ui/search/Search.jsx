@@ -11,7 +11,9 @@ export function Search() {
           placeholder="Поиск по статьям"
           className={styles.inputSearch}
         />
-        <button type="submit" className={styles.btn}></button>
+        <button type="submit" className={styles.btn}>
+          <Icon iconName="loupe" />
+        </button>
       </label>
     </form>
   );

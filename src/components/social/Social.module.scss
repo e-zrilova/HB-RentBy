@@ -18,4 +18,8 @@
 
 .link {
   color: $black;
+
+  &:hover {
+    color: $brend;
+  }
 }
