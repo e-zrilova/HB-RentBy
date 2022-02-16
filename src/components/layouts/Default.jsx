@@ -5,8 +5,7 @@ export function Default({ children }) {
   return (
     <div>
       <Header />
-      <main>{children}</main>
-
+      <main className={styles.container}>{children}</main>
       <Footer />
     </div>
   );

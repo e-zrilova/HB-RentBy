@@ -1,0 +1,35 @@
+@import "./../../../styles/variables.scss";
+
+.inputSearch {
+  background: $light;
+  box-shadow: 0px 10px 20px rgba(0, 96, 206, 0.05);
+  border-radius: 20px;
+  width: 616px;
+  height: 37px;
+  padding-right: 75px;
+  padding-left: 20px;
+  color: $black;
+  border: none;
+  outline: $brend;
+}
+
+.form {
+  position: absolute;
+  top: 185px;
+  left: 50%;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  background: $brend;
+  border-radius: 20px;
+  width: 57px;
+  height: 37px;
+  border: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}

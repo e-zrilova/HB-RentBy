@@ -34,10 +34,29 @@ main {
 .decor {
   position: absolute;
   right: 0;
-  left: 0;
-  width: 849px;
+  top: 132px;
+  width: 55%;
   height: 999px;
   background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
   opacity: 0.1;
-  border-radius: 40px;
+  border-radius: 40px 0 0 40px;
+  padding-top: 55px;
+  padding-left: 95px;
+}
+
+.title {
+  font-family: $fontPrimary;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  color: $black;
+  padding-top: 25px;
+  margin-top: 50px;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
 }
