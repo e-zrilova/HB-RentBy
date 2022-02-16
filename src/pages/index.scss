@@ -30,3 +30,14 @@ main {
   flex: 1;
   min-height: 100vh;
 }
+
+.decor {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 849px;
+  height: 999px;
+  background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
+  opacity: 0.1;
+  border-radius: 40px;
+}

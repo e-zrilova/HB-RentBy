@@ -5,7 +5,7 @@ export function Vk({ className, style }) {
       width="25"
       height="15"
       viewBox="0 0 25 15"
-      fill="#1E2123"
+      fill="currentColor"
       className={className}
       style={style}
     >

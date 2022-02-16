@@ -34,9 +34,7 @@ export function Footer() {
                 {info.email}
               </a>
             </div>
-            <p className={cx(styles.workTime)}>
-              {info.worktime}
-            </p>
+            <p className={cx(styles.workTime)}>{info.worktime}</p>
           </div>
           <div>
             <div className={styles.wrapper}>

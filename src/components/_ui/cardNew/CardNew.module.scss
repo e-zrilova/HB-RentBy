@@ -1,0 +1,74 @@
+@import "./../../../styles/variables.scss";
+
+.img {
+  display: block;
+  width: 406px;
+  height: 226px;
+  border-radius: 10px;
+  background: $color-3;
+}
+
+.card {
+  position: relative;
+  max-width: 406px;
+  min-height: 500px;
+  background: $light;
+  border-radius: 10px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
+    border-bottom: 2px solid $color-1;
+  }
+}
+
+.wrapper {
+  padding: 30px 20px 26px;
+}
+
+.description {
+  font-family: $fontPrimary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  height: 85px;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.link {
+  font-family: $fontPrimary;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $black;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  background: $color-1;
+  border-radius: 18px;
+  min-width: 125px;
+  min-height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $fontPrimary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-2;
+}

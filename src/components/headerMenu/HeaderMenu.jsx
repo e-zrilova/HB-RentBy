@@ -34,8 +34,10 @@ export function HeaderMenu() {
     <ul className={styles.list}>
       {defaultMenu.map((item) => (
         <li key={item.id} className={styles.item}>
-          {item.svg && <Icon iconName={item.svg} />}
-          <a href={item.link} className={styles.link}>{item.title}</a>
+          <a href={item.link} className={styles.link}>
+            {item.svg && <Icon iconName={item.svg} />}
+            {item.title}
+          </a>
         </li>
       ))}
     </ul>

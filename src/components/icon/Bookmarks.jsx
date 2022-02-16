@@ -5,7 +5,7 @@ export function Bookmarks({ className, style }) {
       width="16"
       height="16"
       viewBox="0 0 24 24"
-      fill="#8291A3"
+      fill="currentColor"
       className={className}
       style={style}
     >

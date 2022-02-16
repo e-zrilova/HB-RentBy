@@ -15,3 +15,17 @@
   cursor: pointer;
 
 }
+
+.defaultBtn {
+  background: rgba(102, 78, 249, 0.1);
+  border-radius: 17px;
+  cursor: pointer;
+  color: $brend;
+  width: 81px;
+  height: 37px;
+  font-family: $fontPrimary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+}

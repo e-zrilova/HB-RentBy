@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 import { HeaderMenu } from "../headerMenu/HeaderMenu";
-import { LinkHeader } from "../_ui/linkHeader/LinkHeader";
+import { LinkHeader } from "../linkHeader/LinkHeader";
 import { Category } from "../categoryHeader/CategoryHeader";
 import { Button } from "../_ui/button/Button";
 export function Header() {

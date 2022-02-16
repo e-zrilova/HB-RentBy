@@ -25,7 +25,9 @@ export function Social() {
       Мы в соцсетях
       {socialList.map((item) => (
         <li key={item.id} className={styles.item}>
-          <a href={item.link}>{item.svg && <Icon iconName={item.svg} />}</a>
+          <a href={item.link} className={styles.link}>
+            {item.svg && <Icon iconName={item.svg} color="purple" />}
+          </a>
         </li>
       ))}
     </ul>
