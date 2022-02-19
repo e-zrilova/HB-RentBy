@@ -3,7 +3,7 @@ import { CardNew } from "../_ui/cardNew/CardNew";
 const cardContent = [
   {
     id: 1,
-    img: "./assets/images/news/photo1.jpg",
+    img: "/assets/images/news/photo1.jpg",
     title: "Линия Сталина: суровый отдых в усадьбах на сутки",
     link: "#",
     description:
@@ -12,7 +12,7 @@ const cardContent = [
   },
   {
     id: 2,
-    img: "./assets/images/news/photo1.jpg",
+    img: "/assets/images/news/photo1.jpg",
     title: "Линия Сталина: суровый отдых в усадьбах на сутки",
     link: "#",
     description:
@@ -21,7 +21,7 @@ const cardContent = [
   },
   {
     id: 3,
-    img: "./assets/images/news/photo1.jpg",
+    img: "/assets/images/news/photo1.jpg",
     title: "Линия Сталина: суровый отдых в усадьбах на сутки",
     link: "#",
     description:
@@ -30,7 +30,7 @@ const cardContent = [
   },
   {
     id: 4,
-    img: "./assets/images/news/photo1.jpg",
+    img: "/assets/images/news/photo1.jpg",
     title: "Линия Сталина: суровый отдых в усадьбах на сутки",
     link: "#",
     description:
@@ -39,7 +39,7 @@ const cardContent = [
   },
   {
     id: 5,
-    img: "./assets/images/news/photo1.jpg",
+    img: "/assets/images/news/photo1.jpg",
     title: "Линия Сталина: суровый отдых в усадьбах на сутки",
     link: "#",
     description:
@@ -48,7 +48,7 @@ const cardContent = [
   },
   {
     id: 6,
-    img: "./assets/images/news/photo1.jpg",
+    img: "/assets/images/news/photo1.jpg",
     title: "Линия Сталина: суровый отдых в усадьбах на сутки",
     link: "#",
     description:
@@ -57,7 +57,7 @@ const cardContent = [
   },
   {
     id: 7,
-    img: "./assets/images/news/photo1.jpg",
+    img: "/assets/images/news/photo1.jpg",
     title: "Линия Сталина: суровый отдых в усадьбах на сутки",
     link: "#",
     description:
