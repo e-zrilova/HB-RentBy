@@ -1,7 +1,7 @@
-import styles from "./Companies.module.scss";
 import { Icon } from "../icon/icon";
+import styles from "./Payments.module.scss";
 
-const companiesList = [
+const PAYMENTS_DATA = [
   {
     id: 1,
     title: "Visa",
@@ -39,13 +39,13 @@ const companiesList = [
     logoUrl: "./assets/images/companies/verifiedbyvisa.png",
   },
 ];
-export function Companies() {
+export function Payments() {
   return (
     <ul className={styles.list}>
-      {companiesList.map((item) => (
-        <li key={item.id} className={styles.item}>
-          <a href={item.link}>
-            <img src={item.logoUrl} alt={item.title}></img>
+      {PAYMENTS_DATA.map(({ id, link, logoUrl, title }) => (
+        <li key={id} className={styles.item}>
+          <a href={link}>
+            <img src={logoUrl} alt={title} />
           </a>
         </li>
       ))}

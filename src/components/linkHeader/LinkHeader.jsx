@@ -1,10 +1,10 @@
-import styles from "./LinkHeader.module.scss";
 import { Link } from "./../_ui/link/Link";
+import styles from "./LinkHeader.module.scss";
 
 export function LinkHeader() {
   return (
     <div className={styles.block}>
-      <Link link={"/bookmarks"} iconName="bookmarks">
+      <Link link="/bookmarks" iconName="bookmarksIcon">
         Закладки
       </Link>
       <Link color="blue" className={styles.link}>

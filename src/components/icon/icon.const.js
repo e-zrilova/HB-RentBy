@@ -1,17 +1,17 @@
-import { Bookmarks } from "./Bookmarks";
-import { Marker } from "./Marker";
-import { Instagram } from "./Instagram";
-import { Vk } from "./Vk";
-import { Facebook } from "./Facebook"
-import { Loupe } from "./Loupe";
-import { Home } from "./Home";
+import { BookmarksIcon } from "./BookmarksIcon";
+import { MarkerIcon } from "./MarkerIcon";
+import { InstagramIcon } from "./InstagramIcon";
+import { VkIcon } from "./VkIcon";
+import { FacebookIcon } from "./FacebookIcon"
+import { LoupeIcon } from "./LoupeIcon";
+import { HomeIcon } from "./HomeIcon";
 
 export const iconCollection = {
-  'bookmarks': Bookmarks,
-  'marker': Marker,
-  'instagram': Instagram,
-  'vk': Vk,
-  'facebook': Facebook,
-  'loupe': Loupe,
-  'home': Home
+  'bookmarksIcon': BookmarksIcon,
+  'markerIcon': MarkerIcon,
+  'instagramIcon': InstagramIcon,
+  'vkIcon': VkIcon,
+  'facebookIcon': FacebookIcon,
+  'loupeIcon': LoupeIcon,
+  'homeIcon': HomeIcon
 };

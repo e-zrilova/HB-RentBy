@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import clsx from 'clsx';
 
-import { Newslist } from "./pages/index";
+
+import { NewsPage } from "./pages/NewsPage/NewsPage";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Newslist />
+    <NewsPage />
   </React.StrictMode>,
   document.getElementById("root")
 );

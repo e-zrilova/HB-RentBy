@@ -1,5 +1,5 @@
-import styles from "./Search.module.scss";
 import { Icon } from "../../icon/icon";
+import styles from "./Search.module.scss";
 
 export function Search() {
   return (
@@ -12,7 +12,7 @@ export function Search() {
           className={styles.inputSearch}
         />
         <button type="submit" className={styles.btn}>
-          <Icon iconName="loupe" />
+          <Icon iconName="loupeIcon" />
         </button>
       </label>
     </form>

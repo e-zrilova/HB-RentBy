@@ -56,17 +56,17 @@ const list = [
 export function Category() {
   return (
     <ul className={styles.list}>
-      {list.map((item) => (
-        <li key={item.id} className={styles.item}>
-          <a className={styles.link} href={item.link}>
-            {item.title}
+      {list.map(({ id, title, link, category }) => (
+        <li key={id} className={styles.item}>
+          <a className={styles.link} href={link}>
+            {title}
           </a>
           <ul className={styles.levelList}>
-            {item.category &&
-              item.category.map((subItem) => (
-                <li key={subItem.id} className={styles.levelItem}>
-                  <a className={styles.levelLink} href={subItem.link}>
-                    {subItem.title}
+            {category &&
+              category.map(({ id, title, link }) => (
+                <li key={id} className={styles.levelItem}>
+                  <a className={styles.levelLink} href={link}>
+                    {title}
                   </a>
                 </li>
               ))}

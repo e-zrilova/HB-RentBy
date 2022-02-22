@@ -1,32 +1,31 @@
-import styles from "./Social.module.scss";
 import { Icon } from "../icon/icon";
+import styles from "./Social.module.scss";
 
-const socialList = [
+const SOCIALLIST_DATA = [
   {
     id: 1,
     link: "www.instagram.com",
-    svg: "instagram",
+    svg: "instagramIcon",
   },
   {
     id: 2,
     link: "www.vk.com",
-    svg: "vk",
+    svg: "vkIcon",
   },
   {
     id: 3,
     link: "www.facebook.com",
-    svg: "facebook",
+    svg: "facebookIcon",
   },
 ];
 export function Social() {
   return (
     <ul className={styles.list}>
-      {" "}
       Мы в соцсетях
-      {socialList.map((item) => (
-        <li key={item.id} className={styles.item}>
-          <a href={item.link} className={styles.link}>
-            {item.svg && <Icon iconName={item.svg} color="purple" />}
+      {SOCIALLIST_DATA.map(({ id, link, svg }) => (
+        <li key={id} className={styles.item}>
+          <a href={link} className={styles.link}>
+            {svg && <Icon iconName={svg} color="purple" />}
           </a>
         </li>
       ))}

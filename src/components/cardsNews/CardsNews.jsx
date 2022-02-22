@@ -1,6 +1,6 @@
+import { NewsItem } from "../_ui/NewsItem/NewsItem";
 import styles from "./cardsNews.module.scss";
-import { CardNew } from "../_ui/cardNew/CardNew";
-const cardContent = [
+const CARDS_DATA = [
   {
     id: 1,
     img: "/assets/images/news/photo1.jpg",
@@ -68,14 +68,14 @@ const cardContent = [
 export function CardsNews() {
   return (
     <ul className={styles.list}>
-      {cardContent.map((item) => (
-        <li key={item.id} className={styles.item}>
-          <CardNew
-            title={item.title}
-            img={item.img}
-            link={item.link}
-            description={item.description}
-            date={item.date}
+      {CARDS_DATA.map(({ id, title, img, link, date, description }) => (
+        <li key={id} className={styles.item}>
+          <NewsItem
+            title={title}
+            img={img}
+            link={link}
+            description={description}
+            date={date}
           />
         </li>
       ))}

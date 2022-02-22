@@ -1,4 +1,4 @@
-export function Home({ className, style }) {
+export function HomeIcon({ className }) {
   return (
     <svg
       width="12"
@@ -7,7 +7,6 @@ export function Home({ className, style }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      style={style}
     >
       <g clipPath="url(#clip0_305_2083)">
         <path

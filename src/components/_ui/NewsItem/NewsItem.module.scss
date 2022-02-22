@@ -2,16 +2,19 @@
 
 .img {
   display: block;
-  width: 406px;
-  height: 226px;
+  width: 100%;
+  max-height: 226px;
   border-radius: 10px;
-  background: $color-3;
+  background-color: $color-3;
 }
 
 .card {
   position: relative;
   max-width: 406px;
   min-height: 500px;
+  display: block;
+  font-family: $fontPrimary;
+  font-weight: 400;
   background: $light;
   border-radius: 10px;
 
@@ -31,22 +34,18 @@
 }
 
 .description {
-  font-family: $fontPrimary;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 20px;
   color: $color-4;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-  height: 85px;
   margin-top: 15px;
   margin-bottom: 45px;
 }
 
-.link {
-  font-family: $fontPrimary;
+.title {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;

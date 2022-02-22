@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Icon } from "./../icon/icon";
-import styles from "./Breadcrumbs.module.scss";
 import { pathTitles } from "./breadcrumbs.consts";
+import styles from "./Breadcrumbs.module.scss";
 // const crumbs = [
 //   {
 //     title: "Новости",
@@ -28,7 +28,7 @@ export function BreadCrumbs() {
   return (
     <ul className={styles.list}>
       <li>
-        <Icon iconName="home" />
+        <Icon iconName="homeIcon" />
       </li>
       {crumbs.map((item, index) => (
         <li key={index} className={styles.item}>

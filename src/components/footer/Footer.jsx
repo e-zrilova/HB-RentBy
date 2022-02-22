@@ -1,15 +1,15 @@
-import styles from "./Footer.module.scss";
-import { FooterMenu } from "../footerMenu/index";
-import { Category } from "../categoryFooter/index";
+import clsx from "clsx";
+import { FooterMenu } from "../footerMenu/footerMenu";
+import { Category } from "../categoryFooter/categoryFooter";
 import { Social } from "../social/Social";
-import { Companies } from "../companies/Companies";
-import cx from "classnames";
-const info = {
+import { Payments } from "../payments/Payments";
+import styles from "./Footer.module.scss";
+const INFO_DATA = {
   contacts:
     "ИП Шушкевич Андрей Викторович \n УНП 192602485 Минским горисполкомом 10.02.2016 220068 \n РБ, г. Минск, ул. Осипенко, 21, кв.23",
   phone: "+375 29 621 48 33",
   email: "sdaem@sdaem.by",
-  worktime: "Режим работы: 08:00-22:00",
+  worktime: "08:00-22:00",
 };
 export function Footer() {
   return (
@@ -22,19 +22,21 @@ export function Footer() {
               height={19}
               src="../assets/images/logo.png"
               alt="Логотип компании SDAEM.BY"
-            ></img>
+            />
             <span className={styles.text}>СДАЁМ БАЙ</span>
-            <p className={styles.contacts}>{info.contacts}</p>
+            <p className={styles.contacts}>{INFO_DATA.contacts}</p>
             <div className={styles.linkWrapper}>
-              <a className={styles.link} href={`tel:${info.phone}`}>
-                {info.phone}
+              <a className={styles.link} href={`tel:${INFO_DATA.phone}`}>
+                {INFO_DATA.phone}
               </a>
               ,&nbsp;
-              <a className={styles.link} href={`mailto:${info.email}`}>
-                {info.email}
+              <a className={styles.link} href={`mailto:${INFO_DATA.email}`}>
+                {INFO_DATA.email}
               </a>
             </div>
-            <p className={cx(styles.workTime)}>{info.worktime}</p>
+            <p className={clsx(styles.workTime)}>
+              Режим работы:{INFO_DATA.worktime}
+            </p>
           </div>
           <div>
             <div className={styles.wrapper}>
@@ -43,7 +45,7 @@ export function Footer() {
             </div>
             <div className={styles.label}>
               <Social />
-              <Companies />
+              <Payments />
             </div>
           </div>
         </div>

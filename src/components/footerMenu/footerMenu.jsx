@@ -1,8 +1,7 @@
+import { Icon } from "../icon/icon";
 import styles from "./FooterMenu.module.scss";
 
-import { Icon } from "../icon/icon";
-
-const categoryList = [
+const CATEGORYLIST_DATA = [
   {
     id: 1,
     title: "Новости",
@@ -27,10 +26,10 @@ const categoryList = [
 export function FooterMenu() {
   return (
     <ul className={styles.list}>
-      {categoryList.map((item) => (
-        <li className={styles.item} key={item.id}>
-          <a className={styles.link} href={item.link}>
-            {item.title}
+      {CATEGORYLIST_DATA.map(({ id, link, title }) => (
+        <li className={styles.item} key={id}>
+          <a className={styles.link} href={link}>
+            {title}
           </a>
         </li>
       ))}

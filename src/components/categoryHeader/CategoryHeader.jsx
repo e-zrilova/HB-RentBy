@@ -1,13 +1,12 @@
+import { Icon } from "../icon/icon";
 import styles from "./CategoryHeader.module.scss";
 
-import { Icon } from "../icon/icon";
-
-const categoryList = [
+const CATEGORYLIST_DATA = [
   {
     id: 1,
     title: "Квартиры на сутки",
     link: "#",
-    svg: "marker",
+    svg: "markerIcon",
   },
   {
     id: 2,
@@ -25,15 +24,15 @@ const categoryList = [
     link: "#",
   },
 ];
-export function Category() {
+export function CategoryHeader() {
   return (
     <ul className={styles.list}>
-      {categoryList.map((item) => (
-        <li key={item.id} className={styles.item}>
-          <a href={item.link} className={styles.link}>
-            {item.title}
+      {CATEGORYLIST_DATA.map(({ id, link, title, svg }) => (
+        <li key={id} className={styles.item}>
+          <a href={link} className={styles.link}>
+            {title}
           </a>
-          {item.svg && <Icon iconName={item.svg} />}
+          {svg && <Icon iconName={svg} />}
         </li>
       ))}
     </ul>

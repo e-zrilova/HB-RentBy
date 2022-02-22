@@ -1,7 +1,7 @@
 @import "./../../../styles/variables.scss";
 
 .inputSearch {
-  background: $light;
+  background-color: $light;
   box-shadow: 0px 10px 20px rgba(0, 96, 206, 0.05);
   border-radius: 20px;
   width: 616px;
@@ -11,6 +11,10 @@
   color: $black;
   border: none;
   outline: $brend;
+  font-family: $fontPrimary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .form {
