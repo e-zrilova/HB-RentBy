@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Icon } from "./../icon/icon";
+import { Icon } from "components/icon/icon";
 import { pathTitles } from "./breadcrumbs.consts";
 import styles from "./Breadcrumbs.module.scss";
 // const crumbs = [

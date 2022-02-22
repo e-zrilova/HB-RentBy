@@ -53,7 +53,7 @@ const list = [
     ],
   },
 ];
-export function Category() {
+export function CategoryFooter() {
   return (
     <ul className={styles.list}>
       {list.map(({ id, title, link, category }) => (

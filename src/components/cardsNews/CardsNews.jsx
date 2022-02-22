@@ -1,4 +1,4 @@
-import { NewsItem } from "../_ui/NewsItem/NewsItem";
+import { NewsItem } from "components/_ui/NewsItem/NewsItem";
 import styles from "./cardsNews.module.scss";
 const CARDS_DATA = [
   {

@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Icon } from "../../icon/icon";
+import { Icon } from "components/icon/icon";
 import styles from "./Link.module.scss";
 
 export function Link({ iconName, children, link, color, className }) {

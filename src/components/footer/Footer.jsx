@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { FooterMenu } from "../footerMenu/footerMenu";
-import { Category } from "../categoryFooter/categoryFooter";
+import { CategoryFooter } from "../categoryFooter/categoryFooter";
 import { Social } from "../social/Social";
 import { Payments } from "../payments/Payments";
 import styles from "./Footer.module.scss";
@@ -35,12 +35,12 @@ export function Footer() {
               </a>
             </div>
             <p className={clsx(styles.workTime)}>
-              Режим работы:{INFO_DATA.worktime}
+              "Режим работы:{INFO_DATA.worktime}
             </p>
           </div>
           <div>
             <div className={styles.wrapper}>
-              <Category />
+              <CategoryFooter />
               {<FooterMenu />}
             </div>
             <div className={styles.label}>

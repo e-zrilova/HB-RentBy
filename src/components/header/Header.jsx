@@ -19,7 +19,7 @@ export function Header() {
               alt="Логотип компании SDAEM.BY"
             />
             <CategoryHeader />
-            <Button />
+            <Button>+&nbsp; Разместить объявление</Button>
           </div>
         </div>
       </div>

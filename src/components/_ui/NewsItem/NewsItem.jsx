@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { DefaultButton } from "../button/Button";
+import { DefaultButton } from "components/_ui/button/Button";
 import styles from "./NewsItem.module.scss";
 
 export function NewsItem({ title, description, link, img, date }) {
@@ -11,7 +11,7 @@ export function NewsItem({ title, description, link, img, date }) {
         <p className={styles.description}>{description}</p>
         <div className={styles.block}>
           <p className={styles.label}>{date}</p>
-          <DefaultButton />
+          <DefaultButton>Читать</DefaultButton>
         </div>
       </div>
     </a>
