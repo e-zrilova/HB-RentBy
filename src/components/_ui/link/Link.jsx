@@ -1,12 +1,10 @@
 import clsx from "clsx";
-import { Icon } from "components/icon/icon";
 import styles from "./Link.module.scss";
 
-export function Link({ iconName, children, link, color, className }) {
+export function Link({ children, link, color, className }) {
   return (
     <a className={clsx(styles.link, styles[color], className)} href={link}>
       {children}
-      {iconName && <Icon iconName={iconName} />}
     </a>
   );
 }

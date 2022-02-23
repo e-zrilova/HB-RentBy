@@ -1,0 +1,25 @@
+@import 'styles/variables.scss';
+
+.list {
+  display: flex;
+}
+
+.item {
+  font-family: $fontPrimary;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  border-bottom: 2px solid transparent;
+  padding: 5px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  &:active {
+    font-weight: 700;
+    border-bottom-color: $secondBrend;
+  }
+}
