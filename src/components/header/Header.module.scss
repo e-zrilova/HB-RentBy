@@ -1,0 +1,30 @@
+@import 'styles/variables.scss';
+
+.header {
+  background: $color-1;
+  font-family: $fontPrimary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  background: $light;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  padding: 20px 0 15px;
+}

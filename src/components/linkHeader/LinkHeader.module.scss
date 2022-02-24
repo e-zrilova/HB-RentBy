@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.linkBookmarks {
+  font-size: 20px;
+
+  &:not(:last-child) {
+    margin-right: 11px;
+  }
+}
+
+.block {
+  display: flex;
+  column-gap: 40px;
+}

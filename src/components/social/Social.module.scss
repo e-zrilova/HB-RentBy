@@ -1,0 +1,26 @@
+@import 'styles/variables.scss';
+
+.list {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  column-gap: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.item {
+  &:first-child {
+    margin-left: 25px;
+  }
+}
+
+.link {
+  color: $black;
+
+  &:hover {
+    color: $brend;
+    transition: 0.1s;
+  }
+}

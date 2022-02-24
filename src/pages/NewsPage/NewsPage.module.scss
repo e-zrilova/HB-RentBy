@@ -1,0 +1,30 @@
+@import 'styles/variables.scss';
+
+.decor {
+  position: absolute;
+  right: 0;
+  top: 132px;
+  width: 55%;
+  height: 999px;
+  background: linear-gradient(90deg, #94AFFF 0%, #4E64F9 94.5%);
+  opacity: 0.1;
+  border-radius: 40px 0 0 40px;
+  padding-top: 55px;
+  padding-left: 95px;
+}
+
+.title {
+  font-family: $fontPrimary;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  color: $black;
+  padding-top: 0;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}

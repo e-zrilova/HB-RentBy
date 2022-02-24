@@ -1,0 +1,38 @@
+@import "styles/variables.scss";
+
+
+.list {
+  margin-top: 42px;
+  display: flex;
+  column-gap: 17px;
+}
+
+.item {
+  position: relative;
+  margin-left: 10px;
+
+  &:last-child {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: $brend;
+      top: 7px;
+      left: -15px;
+    }
+  }
+}
+
+.link {
+  font-family: $fontPrimary;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+
+  &:last-child {
+    color: $color-4;
+  }
+
+}
