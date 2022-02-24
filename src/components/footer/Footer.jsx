@@ -3,14 +3,9 @@ import { FooterMenu } from "../footerMenu/footerMenu";
 import { CategoryFooter } from "../categoryFooter/categoryFooter";
 import { Social } from "../social/Social";
 import { Payments } from "../payments/Payments";
+import { INFO_DATA } from "../../api/Data";
 import styles from "./Footer.module.scss";
-const INFO_DATA = {
-  contacts:
-    "ИП Шушкевич Андрей Викторович \n УНП 192602485 Минским горисполкомом 10.02.2016 220068 \n РБ, г. Минск, ул. Осипенко, 21, кв.23",
-  phone: "+375 29 621 48 33",
-  email: "sdaem@sdaem.by",
-  worktime: "08:00-22:00",
-};
+
 export function Footer() {
   return (
     <footer className={styles.footer}>

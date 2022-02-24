@@ -1,23 +1,7 @@
 import { Icon } from "../icon/icon";
+import { SOCIALLIST_DATA } from "../../api/Data";
 import styles from "./Social.module.scss";
 
-const SOCIALLIST_DATA = [
-  {
-    id: 1,
-    link: "www.instagram.com",
-    svg: "instagramIcon",
-  },
-  {
-    id: 2,
-    link: "www.vk.com",
-    svg: "vkIcon",
-  },
-  {
-    id: 3,
-    link: "www.facebook.com",
-    svg: "facebookIcon",
-  },
-];
 export function Social() {
   return (
     <ul className={styles.list}>

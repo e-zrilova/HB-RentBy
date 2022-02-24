@@ -1,28 +1,7 @@
 import { Icon } from "../icon/icon";
+import { CATEGORYLIST_DATA } from "../../api/Data";
 import styles from "./FooterMenu.module.scss";
 
-const CATEGORYLIST_DATA = [
-  {
-    id: 1,
-    title: "Новости",
-    link: "#",
-  },
-  {
-    id: 2,
-    title: "Размещение и тарифы ",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Объявления на карте",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Контакты",
-    link: "#",
-  },
-];
 export function FooterMenu() {
   return (
     <ul className={styles.list}>

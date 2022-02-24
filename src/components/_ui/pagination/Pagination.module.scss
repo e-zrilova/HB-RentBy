@@ -12,6 +12,7 @@
   line-height: 22px;
   border-bottom: 2px solid transparent;
   padding: 5px;
+  color: $black;
   cursor: pointer;
 
   &:not(:last-child) {
@@ -22,4 +23,8 @@
     font-weight: 700;
     border-bottom-color: $secondBrend;
   }
+}
+
+.link {
+  color: inherit;
 }

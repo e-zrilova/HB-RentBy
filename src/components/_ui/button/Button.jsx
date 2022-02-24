@@ -1,4 +1,3 @@
-import { Children } from "react/cjs/react.production.min";
 import styles from "./Button.module.scss";
 
 export function Button({ children }) {
